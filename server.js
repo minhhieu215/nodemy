@@ -17,6 +17,6 @@ app.use(bodyParser.json())
 
 app.use('/api/account',accountRouter)
 
-app.listen(port,()=>{ 
-    console.log("App is running on port"+" "+port)
+app.listen(process.env.PORT,()=>{ 
+    console.log("App is running on port"+" "+PORT)
 }) 
